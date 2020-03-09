@@ -14,6 +14,7 @@ import { PlaygroundComponent } from './sections/playground/playground.component'
 import { PlaygroundVrComponent } from './sections/playground-vr/playground-vr.component';
 import { AttributePipe } from './services/extras/attribute.pipe';
 import {DragDropModule} from '@angular/cdk/drag-drop';
+import { CmsComponent } from './sections/cms/cms.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -22,6 +23,7 @@ const routes: Routes = [
   {path: 'atlas', component: AtlasComponent},
   {path: 'lhcb', component: LHCbComponent},
   {path: 'trackml', component: TrackmlComponent},
+  {path: 'cms', component: CmsComponent},
   {path: 'playground', component: PlaygroundComponent},
   {path: 'playgroundVR', component: PlaygroundVrComponent}
 ];
@@ -37,7 +39,8 @@ const routes: Routes = [
     NavComponent,
     PlaygroundComponent,
     PlaygroundVrComponent,
-    AttributePipe
+    AttributePipe,
+    CmsComponent
   ],
   imports: [
     BrowserModule,
